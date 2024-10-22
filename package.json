@@ -7,8 +7,11 @@
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "pnpm --filter frontend run dev",
-    "dev": "concurrently \"pnpm --filter frontend run dev\" \"pnpm run server\""
-  },
+    "dev": "concurrently \"pnpm --filter frontend run dev\" \"pnpm run server\"",
+    "build": "pnpm --filter frontend run build",
+    "lint": "eslint .",
+    "preview": "pnpm --filter frontend run preview"
+},
   "keywords": [],
   "author": "",
   "license": "MIT",
