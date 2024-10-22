@@ -36,6 +36,7 @@ function NewTicket() {
         e.preventDefault();
         
         dispatch(createTicket({ product, description }));
+        navigate('/');
     }
 
     if (isLoading) {

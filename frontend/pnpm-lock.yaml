@@ -14,6 +14,9 @@ importers:
       axios:
         specifier: ^1.7.7
         version: 1.7.7
+      express-async-handler:
+        specifier: ^1.2.0
+        version: 1.2.0
       g:
         specifier: ^2.0.1
         version: 2.0.1
@@ -1595,6 +1598,9 @@ packages:
 
   exenv@1.2.2:
     resolution: {integrity: sha512-Z+ktTxTwv9ILfgKCk32OX3n/doe+OcLTRtqK9pcL+JsP3J1/VW8Uvl4ZjLlKqeW4rzK4oesDOGMEMRIZqtP4Iw==}
+
+  express-async-handler@1.2.0:
+    resolution: {integrity: sha512-rCSVtPXRmQSW8rmik/AIb2P0op6l7r1fMW538yyvTMltCO4xQEWMmobfrIxN2V1/mVrgxB8Az3reYF6yUZw37w==}
 
   external-editor@3.1.0:
     resolution: {integrity: sha512-hMQ4CX1p1izmuLYyZqLMO/qGNw10wSv9QDCPfzXfyFrOaCSSoRfqE1Kf1s5an66J5JZC62NewG+mK49jOCtQew==}
@@ -5295,6 +5301,8 @@ snapshots:
       strip-final-newline: 2.0.0
 
   exenv@1.2.2: {}
+
+  express-async-handler@1.2.0: {}
 
   external-editor@3.1.0:
     dependencies:
