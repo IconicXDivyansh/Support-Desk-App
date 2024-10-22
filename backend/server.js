@@ -1,6 +1,7 @@
 const express = require('express');
 const colors = require('colors');
 const path = require('path');
+const cors = require('cors');
 const dotenv = require('dotenv').config();
 const { errorHandler } = require('./middleware/errorMiddleware');
 const connectDB = require('./config/db');
@@ -14,6 +15,7 @@ const app = express();
 // Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 
 // Routes
 app.use('/api/users', require('./routes/userRoutes'));
